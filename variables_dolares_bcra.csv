@@ -1,0 +1,35 @@
+idVariable,descripcion,categoria,periodicidad,unidadExpresion,moneda,ultFechaInformada,ultValorInformado
+1,Reservas internacionales,Principales Variables,D,En millones de USD,ME,2026-04-14,45875.0
+4,Tipo de cambio minorista (promedio vendedor),Principales Variables,D,Pesos argentinos por dólar estadounidense,ML,2026-04-16,1379.34
+5,Tipo de cambio mayorista de referencia,Principales Variables,D,Pesos argentinos por dólar estadounidense,ML,2026-04-16,1352.98
+47,Efecto monetario de las compras netas de divisas al sector privado y otros ,Series.xlsm,D,En millones de ARS,ML,2026-04-13,152281.0
+48,Efecto monetario de las compras netas de divisas al tesoro nacional ,Series.xlsm,D,En millones de ARS,ML,2026-04-13,0.0
+74,Reservas internacionales (excluidas asignaciones deg 2009),Series.xlsm,D,En millones de USD,ME,2026-04-13,45408.0
+75,"Oro, divisas, colocaciones a plazo y otros activos de reserva",Series.xlsm,D,En millones de USD,ME,2026-04-13,45408.0
+76,Divisas-pase pasivo en dólares con el exterior,Series.xlsm,D,En millones de USD,ME,2026-04-13,0.0
+77,Reservas internacionales ,Series.xlsm,D,En millones de USD,ME,2026-04-13,-26.9484
+78,Variación de reservas internacionales por compra de divisas ,Series.xlsm,D,En millones de USD,ME,2026-04-13,111.5
+79,Variación de reservas internacionales por operaciones con organismos internacionales,Series.xlsm,D,En millones de USD,ME,2026-04-13,1.6758
+80,Variación de reservas internacionales por otras operaciones del sector público ,Series.xlsm,D,En millones de USD,ME,2026-04-13,-3.9583
+81,Variación de reservas internacionales por efectivo mínimo ,Series.xlsm,D,En millones de USD,ME,2026-04-13,-25.7281
+82,Variación de reservas internacionales por otras operaciones no incluidas en otros rubros ,Series.xlsm,D,En millones de USD,ME,2026-04-13,-110.4379
+83,Asignaciones de DEGS del año 2009,Series.xlsm,D,En millones de USD,ME,2026-04-13,0.0
+84,Tipo de cambio de valuación contable,Series.xlsm,D,Pesos argentinos por dólar estadounidense,ML,2026-04-13,1362.8139
+107,Depósitos  de los sectores público y privado no financieros,Series.xlsm,D,En millones de USD,ME,2026-04-13,42062.0
+108,Depósitos del sector privado no financiero,Series.xlsm,D,En millones de USD,ME,2026-04-13,38889.0
+118,Préstamos en cuenta corriente otorgados al sector privado ,Series.xlsm,D,En millones de USD,ME,2026-04-13,280.0
+119,Préstamos documentaríos otorgados al sector privado,Series.xlsm,D,En millones de USD,ME,2026-04-13,16069.0
+120,Préstamos hipotecaríos otorgados al sector privado,Series.xlsm,D,En millones de USD,ME,2026-04-13,597.0
+121,Préstamos prendaríos otorgados al sector privado,Series.xlsm,D,En millones de USD,ME,2026-04-13,1123.0
+122,Préstamos personales otorgados al sector privado,Series.xlsm,D,En millones de USD,ME,2026-04-13,2.0
+123,Préstamos en tarjeta de créditos otorgados al sector privado,Series.xlsm,D,En millones de USD,ME,2026-04-13,532.0
+124,Otros préstamos otorgados al sector privado,Series.xlsm,D,En millones de USD,ME,2026-04-13,3140.0
+125,Préstamos otorgados al sector privado ,Series.xlsm,D,En millones de USD,ME,2026-04-13,21743.0
+158,"LEBAC, LEDIV y BOPREAL",Series.xlsm,D,En millones de USD,USD,2026-04-15,12282.75
+184,"Tasa de interés de LEBAC USD con liquidación en pesos, de 1 mes",Series.xlsm,D,En porcentaje nominal anual,USD,2006-01-03,4.1497
+185,"Tasa de interés de LEBAC USD con liquidación en pesos, de 6 meses",Series.xlsm,D,En porcentaje nominal anual,USD,2015-12-16,3.65
+186,"Tasa de interés de LEBAC USD con liquidación en pesos, de 12 meses",Series.xlsm,D,En porcentaje nominal anual,USD,2016-01-29,3.65
+187,Tasa de interés de LEBAC de 1 mes,Series.xlsm,D,En porcentaje nominal anual,USD,2016-04-26,0.8997
+188,Tasa de interés de LEBAC de 3 meses,Series.xlsm,D,En porcentaje nominal anual,USD,2016-04-26,0.9001
+189,Tasa de interés de LEBAC de 6 meses,Series.xlsm,D,En porcentaje nominal anual,USD,2016-01-05,3.1251
+190,Tasa de interés de LEBAC de 12 meses,Series.xlsm,D,En porcentaje nominal anual,USD,2016-01-05,3.125
