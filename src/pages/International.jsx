@@ -4,7 +4,8 @@ function International() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/international/latam")
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+    fetch(`${apiUrl}/api/international/latam`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
