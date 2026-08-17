@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/dashboard.css";
-import "../styles/International.css";
+import "../styles/international.css";
 
 function Internacional() {
   const [selectedTab, setSelectedTab] = useState("overview");
