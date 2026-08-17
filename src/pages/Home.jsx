@@ -15,6 +15,7 @@ function Home() {
       <ErrorBoundary>
         <HomeHighlights />
       </ErrorBoundary>
+      
       <ErrorBoundary>
         <MacroOverview />
       </ErrorBoundary>

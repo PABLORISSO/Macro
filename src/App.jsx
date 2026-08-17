@@ -17,6 +17,7 @@ import CicloEconomico from "./pages/CicloEconomico";
 import Ecomics from "./pages/Ecomics";
 import Consumo from "./pages/Consumo";
 import International from "./pages/International.jsx";
+import IpconlinePage from "./pages/Ipconline.jsx";
 
 function AppContent() {
   const { pathname } = useLocation();
@@ -42,6 +43,7 @@ function AppContent() {
             <Route path="/ciclo-economico" element={<CicloEconomico />} />
             <Route path="/consumo" element={<Consumo />} />
             <Route path="/ecomics" element={<Ecomics />} />
+            <Route path="/ipconline" element={<IpconlinePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/international" element={<International />} />

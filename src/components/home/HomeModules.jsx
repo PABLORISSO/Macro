@@ -49,6 +49,14 @@ const MODULES = [
     image: "/images/home/contenedores.png",
     ariaLabel: "Tipo de cambio: Dólar, brecha, competitividad y expectativas.",
   },
+  {
+    title: "IPConline",
+    tag: "Precios supermercados",
+    text: "Precios y productos desde IPConline (fuente de prueba).",
+    path: "/ipconline",
+    image: "/images/home/supermercado.png",
+    ariaLabel: "IPConline: Precios y productos desde supermercados.",
+  },
 ];
 
 function HomeModules() {
