@@ -30,7 +30,8 @@ function SectorExternoCuentaCorriente() {
   useEffect(() => {
     async function cargarDatos() {
       try {
-        const response = await fetch("/api/sector-externo/cuenta-corriente", {
+        const API_URL = import.meta.env.VITE_API_URL || "";
+        const response = await fetch(`${API_URL}/api/sector-externo/cuenta-corriente`, {
           cache: "no-store",
         });
 

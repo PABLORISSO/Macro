@@ -16,7 +16,8 @@ function SectorExternoResumen() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/api/sector-externo/resumen-balanza-pagos", {
+    const API_URL = import.meta.env.VITE_API_URL || "";
+    fetch(`${API_URL}/api/sector-externo/resumen-balanza-pagos`, {
       cache: "no-store",
     })
       .then((r) => {

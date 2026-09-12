@@ -41,7 +41,8 @@ function SectorExternoBienes() {
       setError(null);
 
       try {
-        const response = await fetch("/api/sector-externo/bienes", {
+        const API_URL = import.meta.env.VITE_API_URL || "";
+        const response = await fetch(`${API_URL}/api/sector-externo/bienes`, {
           cache: "no-store",
         });
 

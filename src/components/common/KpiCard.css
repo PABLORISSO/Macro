@@ -1,0 +1,103 @@
+.kpi-card {
+  background: var(--surface, #ffffff);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  border-color: var(--accent-border, rgba(37, 99, 235, 0.3));
+}
+
+.kpi-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.kpi-card-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted, #64748b);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.kpi-card-source {
+  background: var(--bg-app, #f8fafc);
+  border: 1px solid var(--border, #e2e8f0);
+  color: var(--text-muted, #64748b);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.kpi-card-body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.kpi-card-value {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-h, #0f172a);
+  line-height: 1;
+}
+
+.kpi-card-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 20px;
+}
+
+.badge-positive {
+  background: var(--color-positive-bg, rgba(22, 163, 74, 0.1));
+  color: var(--color-positive, #16a34a);
+}
+
+.badge-negative {
+  background: var(--color-negative-bg, rgba(220, 38, 38, 0.1));
+  color: var(--color-negative, #dc2626);
+}
+
+.badge-neutral {
+  background: rgba(100, 116, 139, 0.1);
+  color: #64748b;
+}
+
+.kpi-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border, #f1f5f9);
+  padding-top: 10px;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  color: var(--text-muted, #64748b);
+}
+
+.kpi-card-subtitle {
+  font-weight: 600;
+}
+
+.kpi-card-date {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
