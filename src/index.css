@@ -3,25 +3,47 @@
   --layout-gutter: 32px;
   --nav-height: 64px;
 
-  --text: #5f6673;
-  --text-h: #111827;
-  --bg: #f5f6f8;
-
-  --border: #e5e7eb;
+  /* Superficies y Fondos */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-hover: #f1f5f9;
+  --border: #e2e8f0;
   --code-bg: #f4f3ec;
 
-  --accent: #1d4ed8;
-  --accent-bg: rgba(29, 78, 216, 0.08);
-  --accent-border: rgba(29, 78, 216, 0.28);
+  /* Tipografías y Colores de Texto */
+  --text: #475569;
+  --text-h: #0f172a;
+  --text-muted: #64748b;
 
+  /* Marca y Enfasis */
+  --primary: #0f172a;
+  --accent: #2563eb;
+  --accent-bg: rgba(37, 99, 235, 0.08);
+  --accent-border: rgba(37, 99, 235, 0.28);
+
+  /* Semántica Económica Financiera */
+  --color-positive: #16a34a;
+  --color-positive-bg: rgba(22, 163, 74, 0.1);
+  --color-negative: #dc2626;
+  --color-negative-bg: rgba(220, 38, 38, 0.1);
+  --color-warning: #d97706;
+  --color-warning-bg: rgba(217, 119, 6, 0.1);
+
+  /* Sombras */
   --shadow:
-    rgba(15, 23, 42, 0.08) 0 18px 45px,
-    rgba(15, 23, 42, 0.04) 0 4px 12px;
+    rgba(15, 23, 42, 0.06) 0 10px 30px,
+    rgba(15, 23, 42, 0.03) 0 4px 10px;
 
+  /* Fuentes */
   --sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: "Roboto Condensed", "Inter", system-ui, "Segoe UI", sans-serif;
   --display-heading: "Oswald", "Roboto Condensed", "Inter", sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
 }
 
 * {

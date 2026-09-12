@@ -34,12 +34,12 @@ const MODULES = [
     ariaLabel: "Consumo: Ventas, hogares, salario real y comportamiento del consumidor.",
   },
   {
-    title: "Energía",
-    tag: "Vaca Muerta",
-    text: "Petróleo, gas y energía en Argentina.",
-    path: "/energia",
-    image: "/images/home/vaca-muerta.png",
-    ariaLabel: "Energía: Petróleo, gas y energía en Argentina.",
+    title: "Sector Externo",
+    tag: "Balanza de Pagos",
+    text: "Cuenta corriente, capital y reservas del BCRA.",
+    path: "/sector-externo",
+    image: "/images/home/puerto.png",
+    ariaLabel: "Sector Externo: Cuenta corriente, capital y reservas del BCRA.",
   },
   {
     title: "Tipo de cambio",
