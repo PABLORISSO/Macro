@@ -27,7 +27,8 @@ function SectorExternoCuentaFinanciera() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/api/sector-externo/cuenta-financiera")
+    const API_URL = import.meta.env.VITE_API_URL || "";
+    fetch(`${API_URL}/api/sector-externo/cuenta-financiera`)
       .then((r) => {
         if (!r.ok) {
           throw new Error(`Error ${r.status}`);

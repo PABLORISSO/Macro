@@ -33,7 +33,7 @@ const preloadImages = () => {
     text: "Información confiable, actualizada y analizada para comprender lo que pasa y lo que viene.",
     cta: "Explorar indicadores",
     path: "/macro",
-    image: "/images/home/ministerio-economia.png",
+    image: "/images/home/fondoflorida.png",
   },
   {
     kicker: "Oferta de dólares",

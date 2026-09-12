@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 export async function getAgregadosMonetarios({ desde = "2024-01-01", frecuencia = "mensual", limit } = {}) {
   const params = new URLSearchParams({ desde, frecuencia });
