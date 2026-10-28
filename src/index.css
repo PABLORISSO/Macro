@@ -180,7 +180,7 @@ a {
 @media (max-width: 768px) {
   :root {
     --layout-gutter: 18px;
-    --nav-height: 96px;
+    --nav-height: 64px;
   }
 
   body {
