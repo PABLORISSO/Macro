@@ -39,12 +39,14 @@ const MENU_CATEGORIES = [
 
 function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navRef = useRef(null);
 
   // Close dropdown on route change
   useEffect(() => {
     setActiveDropdown(null);
+    setMobileMenuOpen(false);
   }, [location]);
 
   // Close dropdown when clicking outside
@@ -52,10 +54,21 @@ function Navbar() {
     function handleClickOutside(e) {
       if (navRef.current && !navRef.current.contains(e.target)) {
         setActiveDropdown(null);
+        setMobileMenuOpen(false);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    function handleKeyDown(e) {
+      if (e.key === "Escape") {
+        setActiveDropdown(null);
+        setMobileMenuOpen(false);
+      }
+    }
+    document.addEventListener("pointerdown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   return (
@@ -65,7 +78,28 @@ function Navbar() {
           MACRO <span className="navbar-logo-badge">PRO</span>
         </Link>
 
-        <div className="navbar-links">
+        <button
+          type="button"
+          className="navbar-menu-toggle"
+          aria-expanded={mobileMenuOpen}
+          aria-controls="navbar-links"
+          onClick={() => {
+            setMobileMenuOpen(!mobileMenuOpen);
+            setActiveDropdown(null);
+          }}
+        >
+          <span aria-hidden="true">{mobileMenuOpen ? "✕" : "☰"}</span>
+          {mobileMenuOpen ? "Cerrar" : "Menú"}
+        </button>
+
+        <div id="navbar-links" className={`navbar-links${mobileMenuOpen ? " mobile-open" : ""}`}
+          onClick={(e) => {
+            if (e.target.closest("a")) {
+              setMobileMenuOpen(false);
+              setActiveDropdown(null);
+            }
+          }}
+        >
           <NavLink to="/" className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}>
             Inicio
           </NavLink>
@@ -76,19 +110,25 @@ function Navbar() {
               <div
                 key={cat.title}
                 className={`nav-dropdown ${isOpen ? "open" : ""}`}
-                onMouseEnter={() => setActiveDropdown(idx)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onPointerEnter={(e) => {
+                  if (e.pointerType === "mouse" && window.matchMedia("(min-width: 1101px)").matches) setActiveDropdown(idx);
+                }}
+                onPointerLeave={(e) => {
+                  if (e.pointerType === "mouse" && window.matchMedia("(min-width: 1101px)").matches) setActiveDropdown(null);
+                }}
               >
                 <button
                   type="button"
                   className="nav-dropdown-btn"
+                  aria-expanded={isOpen}
+                  aria-controls={`nav-category-${idx}`}
                   onClick={() => setActiveDropdown(isOpen ? null : idx)}
                 >
                   {cat.title} <span className="arrow">▾</span>
                 </button>
 
                 {isOpen && (
-                  <div className="nav-dropdown-menu">
+                  <div id={`nav-category-${idx}`} className="nav-dropdown-menu">
                     {cat.items.map((item) => (
                       <Link key={item.path} to={item.path} className="nav-dropdown-item">
                         <strong>{item.label}</strong>
